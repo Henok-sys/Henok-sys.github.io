@@ -1,0 +1,379 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Helvetica', Arial, sans-serif;
+    background: linear-gradient(to right, #d3d3d3, #ffffff); /* Gradient from off-white to light orange */
+    color: #2c3e50; /* Dark gray text for better contrast */
+  }
+  
+  
+  header {
+    display: flex;
+    justify-content: center; /* Center the header contents */
+    align-items: center; /* Vertically align */
+    background-color: #d3d3d3; /* Light gray background */
+    padding: 20px 0;
+    position: sticky;
+    top: 0; /* Ensure it's at the top */
+    z-index: 1000; /* Ensure it stays above other content */
+    width: 100%; /* Ensure it stretches across the page */
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav ul li {
+    margin: 0 20px; /* Add space between items (left-right margin) */
+  }
+  
+  header nav ul li a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black; /* Links in black */
+    font-size: 18px;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #ff9800;
+    color: black;
+  }
+  
+/* Dropdown Menu */
+.dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: 100%; /* Position dropdown directly below the parent item */
+  left: 0; /* Align with the parent item */
+  background-color: rgba(255, 165, 0, 0.8); /* Faded orange background */
+  padding: 10px 0;
+  display: none; /* Hidden by default */
+  border-radius: 5px; /* Rounded corners for smoother design */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  z-index: 1000;
+  min-width: 180px; /* Ensure a minimum width for the dropdown */
+}
+
+/* Adjust dropdown position relative to the parent item */
+.dropdown {
+  position: relative; /* Necessary for dropdown menu positioning */
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+  color: black; 
+  display: block; /* Show the dropdown when hovering over the parent item */
+}
+
+.dropdown a {
+  padding: 5px 10px;
+  position: relative; /* Necessary for dropdown menu positioning */
+}
+.dropdown:hover > a {
+  background-color: #ff9800; /* Turn parent background orange when menu is active */
+  color: black; /* Change text color to white for better contrast */
+  border-radius: 5px; /* Match rounded corners of the menu */
+}
+
+/* Dropdown Links */
+.dropdown-menu li {
+  margin: 5px 0; /* Add spacing between links */
+}
+
+.dropdown-menu li a {
+  padding: 10px 15px;
+  color: #000; /* Black text */
+  font-size: 16px;
+  text-align: left;
+  display: block; /* Ensure clickable area spans the entire item */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.dropdown-menu li a:hover {
+  background-color: #ff9800; /* Highlight individual items on hover */
+  border-radius: 3px; /* Slight rounding on hover */
+}
+
+
+/* Home button (Henok) */
+.home-button {
+  position: absolute; /* Position it absolutely within the header */
+  left: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000; /* Orange color */
+  margin-right: auto; /* Align to the left */
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.home-button:hover {
+  color: #d35400; /* Darker orange on hover */
+  transform: scale(1.05);
+}
+  
+  /* General Link Styling */
+  a {
+    text-align:center;
+    text-decoration: none;
+    color: #b8641b; /* Dim grayish blue for regular links */
+  }
+  
+  a:hover {
+    color: #000000; /* Slightly lighter shade on hover */
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #e67e22; /* Orange hero section */
+    color: #fff; /* White text on orange background */
+  }
+  
+  section {
+    padding: 2rem;
+    text-align: center;
+    color: #2c3e50; /* Black text on white background */
+  }
+
+/* Course Section Styling */
+.course-section {
+  background-color: #d3d3d3; /* Light grey background */
+  color: #333; /* Dark text for contrast */
+  padding: 50px 0;
+  text-align: center;
+  border-top: 5px solid #e67e22; /* Orange border to match theme */
+  margin-bottom: 4rem;
+}
+
+.course-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #d3d3d3; /* Match section background */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Heading Styling */
+.course-section h2 {
+  font-size: 2.5rem;
+  color: #e67e22; /* Orange color for heading */
+  margin-bottom: 20px;
+}
+
+/* Description Styling */
+.course-section p {
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333; /* Dark text for readability */
+}
+
+/* Truncated Text */
+.course-description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Show only 3 lines */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+/* Read More Link */
+.read-more {
+  color: #e67e22; /* Orange to match theme */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+
+  /* General Projects Section Styling */
+.projects-section {
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 800px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Individual Project Styling */
+.project {
+  margin-bottom: 3rem;
+}
+
+.medium-link {
+  text-align: center; /* Centers the content inside the container */
+  margin-top: 1em; /* Adds spacing above */
+}
+
+.medium-link a {
+  text-decoration: none; /* Removes underline */
+  color: #333; /* Sets text color */
+}
+
+.medium-content {
+  display: flex; /* Aligns icon and text horizontally */
+  align-items: center; /* Vertically aligns icon and text */
+  gap: 1em; /* Increases space between icon and text */
+  background: rgba(255, 165, 0, 0.8); /* Adds a light background for contrast */
+  border: 1px solid #ddd; /* Adds a subtle border */
+  padding: 0.8em 1em; /* Adds inner padding */
+  border-radius: 8px; /* Rounds the edges */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a light shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animates hover effect */
+}
+
+.medium-content:hover {
+  transform: translateY(-2px); /* Creates a lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+.medium-icon {
+  width: 100px; /* Larger size for better visibility */
+  height: 22px; /* Matches width for square icon */
+  display: block; /* Ensures proper spacing in flexbox */
+}
+
+.medium-content span {
+  font-size: 1.1em; /* Slightly larger text */
+  font-weight: bold; /* Makes text stand out */
+  color: #000; /* Darker text for better readability */
+}
+
+
+.project-title {
+  font-size: 1.8rem;
+  color: #e67e22;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.project-paragraph {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* Image Styling */
+.project-figure {
+  text-align: center; /* Centers the figure content */
+  margin: 1em 0; /* Adds space around the figure */
+}
+
+.project-image {
+  max-height: 300px; /* Keeps the image size controlled */
+  display: block;
+  margin: 0 auto; /* Centers the image */
+}
+
+.project-image:hover {
+  transform:scale(1.5);
+}
+
+.image-caption {
+  font-size: 0.9em; /* Slightly smaller font size for captions */
+  color: #555; /* Gray color for subtlety */
+  margin-top: 0.5em; /* Adds space between the image and caption */
+}
+
+/* Adjust Spacing for Better Visual Balance */
+.project-paragraph:first-of-type {
+  margin-top: 1rem;
+}
+
+.project-image:last-of-type {
+  margin-bottom: 0;
+}
+
+  .about-section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10px;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .about-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Makes the image round */
+    margin-right: 80px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  .about-text {
+    
+    flex: 1;
+    text-align: left;
+  }
+  
+  .about-text h2 {
+    margin-bottom: 10px;
+  }
+  
+  .about-text p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .project-card {
+    background-color: #e67e22; /* Orange for project cards */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: #ffffff; /* White text on orange background */
+  }
+  
+  .project-card img {
+    max-width: 100%;
+    height: 200px;     
+    border-radius: 8px;
+  }
+
+  
+  .project-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8); /* Adds a deeper shadow */
+    color: #ffffff;
+    cursor: pointer; /* Optional: indicates interactability */
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #e67e22; /* Match header */
+    color: #fff; /* White text on orange footer */
+  }
+  
